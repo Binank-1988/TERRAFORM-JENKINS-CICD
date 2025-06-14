@@ -4,11 +4,11 @@ variable "aws_region" {
 }
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     = "CI-CD"
+  default     = "CD-CI"
 }
 variable "instance_type" {
   description = "instance type for ec2"
-  default     = "t2.medium"
+  default     = "t2.large"
 }
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
@@ -17,7 +17,7 @@ variable "ami_id" {
 variable "bucket_name" {
   description = "The name of the S3 bucket to create"
   type        = string
-  default     = "demo-bucket001"
+  default     = "demo-bucket001000"
 }
 
 variable "acl" {
