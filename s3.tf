@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "mrcloudbook-s3-150620251" {
+resource "aws_s3_bucket" "example_bucket" {
   bucket = var.bucket_name
 
   versioning {
